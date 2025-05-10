@@ -1,0 +1,15 @@
+Esta carpeta solo es para cargar achivos que no son opmitmizados por el webpack de vite, es decir, videos o demas archivos que no se requieran optimizar
+    
+    Archivos estáticos accesibles directamente:
+
+        Contenido que no pasa por el bundler (Webpack/Vite algo parecido a Rollup o SASS, son webpacks) y se copia tal cual al build que termina siendo un bundler o bundle final.
+
+        Ejemplos:
+        favicon.ico
+        robots.txt
+        manifest.json (PWA)
+        Imágenes/Videos muy grandes (que no quieras optimizar).
+        Archivos PDF o documentos para descargar.
+        
+
+        

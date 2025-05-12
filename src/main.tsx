@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import './assets/styles/app.css'
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 // Estilos de tailwind

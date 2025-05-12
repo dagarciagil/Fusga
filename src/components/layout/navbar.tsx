@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="flex items-center gap-24 bg-gray-800 text-white p-4 shadow-lg">
-      <Link to="/" className="hover:text-blue-400">
-        <div className="flex items-center  rounded-full h-16 w-16 bg-amber-50">
-          <img className="rounded-full" src=" " alt="Logo FUSGA" />
-        </div>
-      </Link>
+    <nav className="flex items-center gap-24 bg-gray-800 text-white p-4 ">
+      <div className="hover:text-blue-400 flex justify-center items-center rounded-full h-16 w-16 bg-amber-50 ml-6">
+        <Link to="/">
+          <img className="rounded-full" src=" " alt="FUSGA" />
+        </Link>
+      </div>
       <ul className="flex gap-6">
         <li>
           <Link to="/comunity" className="hover:text-blue-400">

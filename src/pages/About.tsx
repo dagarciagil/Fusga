@@ -1,6 +1,8 @@
 // src/pages/About.tsx
-export const About= () => {
+export const About = () => {
   return (
-  <h1>Acerca de nosotros</h1>
-);
-}
+    <>
+      <h1>Acerca de nosotros</h1>
+    </>
+  );
+};

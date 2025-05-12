@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import './assets/styles/Talwind.css'
+import './assets/styles/app.css'
 import ReactDOM from "react-dom/client";
 import {App} from "./App.tsx";
 import { BrowserRouter } from "react-router-dom";

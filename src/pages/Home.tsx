@@ -3,22 +3,36 @@ import iglesia from "../assets/img/iglesia.jpg";
 export const Home = () => {
   return (
     <>
-      <main className="flex justify-center items-center h-dvh">
-        <section>
-          <article>
-            <header>
-              <h1>¿Quienés somos?</h1>
+      <main className="flex justify-center items-center h-screen">
+        <section className="flex justify-around items-center h-full w-full">
+          <article className="flex flex-col justify-center items-start h-96 w-96">
+            <header className="mb-6">
+              <h1 className="text-4xl">
+                Innovación tecnológica con Fusga Systems & Technology
+              </h1>
             </header>
-            <main>
-              <p>FUSGA Aquí va el texto de la sección principal</p>
-            </main>
+            <div>
+              <p>
+                En <strong>FUSGA</strong> nos especializamos en el diseño y desarrollo de estrategias
+                virtuales innovadoras, enfocadas en ayudar a empresas, artistas
+                y proyectos a alcanzar sus metas con éxito. Creamos soluciones
+                digitales personalizadas que impulsan el crecimiento y la
+                visibilidad en el entorno virtual, garantizando resultados
+                efectivos y sostenibles.
+              </p>
+            </div>
+            <footer className="mt-8">
+              <button className="hover:bg-red-500 bg-violet-400 rounded-full h-10 w-48 ">
+                Leer más..
+              </button>
+            </footer>
           </article>
-          <aside>
-            Acá va la imagen
+          <aside className="flex justify-center items-center h-[90%] w-[50rem]">
+            <img className="bg-contain h-full w-full" src={iglesia} alt="Empresa FUSGA" />
           </aside>
         </section>
       </main>
-      <article className="h-screen content-center bg-cyan-300 overflow-hidden bg-no-repeat lg:h-screen">
+      <article className="h-screen content-center bg-slate-300 overflow-hidden bg-no-repeat lg:h-screen">
         <section className="relative py-16 px-4 md:px-8 max-w-6xl mx-auto">
           <div className="flex justify-between flex-row relative bg-indigo-100 rounded-3xl p-8 md:p-12 overflow-hidden">
 
@@ -43,35 +57,6 @@ export const Home = () => {
           </div>
         </section>
       </article>
-      <main className="flex justify-center items-center h-screen w-screen">
-        <section className="flex justify-around items-center h-full w-full">
-          <article className="flex flex-col justify-center items-start h-96 w-96">
-            <header className="mb-6">
-              <h1 className="text-4xl">
-                Innovación tecnológica con Fusga Systems & Technology
-              </h1>
-            </header>
-            <div>
-              <p>
-                En <strong>FUSGA</strong> nos especializamos en el diseño y desarrollo de estrategias
-                virtuales innovadoras, enfocadas en ayudar a empresas, artistas
-                y proyectos a alcanzar sus metas con éxito. Creamos soluciones
-                digitales personalizadas que impulsan el crecimiento y la
-                visibilidad en el entorno virtual, garantizando resultados
-                efectivos y sostenibles.
-              </p>
-            </div>
-            <footer className="mt-8">
-              <button className="hover:bg-red-500 bg-violet-400 rounded-full h-10 w-48 ">
-                Leer más..
-              </button>
-            </footer>
-          </article>
-          <aside className="flex justify-center items-center h-5/6 w-96">
-            <img className="bg-contain h-full w-full" src={iglesia} alt="Empresa FUSGA" />
-          </aside>
-        </section>
-      </main>
     </>
   );
 };

@@ -8,7 +8,6 @@ import './assets/styles/app.css'
 //Componente de rutas
 import {App} from "./App.tsx";
 
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>

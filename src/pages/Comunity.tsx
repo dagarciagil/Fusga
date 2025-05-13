@@ -1,3 +1,8 @@
 export const Comunity = () => {
-  return <h1>Comunidad</h1>;
+  return(
+  <>
+     <h1>Comunidad</h1>
+
+  </>
+  );
 };

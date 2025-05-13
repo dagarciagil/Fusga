@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,vue}", // Ajusta según tu framework
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Marcellus', 'serif'], // Esto hace que Marcellus sea la fuente predeterminada
+      },
+    },
   },
   plugins: [],
 }

@@ -1,4 +1,5 @@
 import iglesia from "../assets/img/iglesia.jpg";
+import { Suscribe } from "./Suscribe"; 
 
 export const Home = () => {
   return (
@@ -8,7 +9,7 @@ export const Home = () => {
           <article className="flex flex-col justify-center items-start h-96 w-96">
             <header className="mb-6">
               <h1 className="text-4xl">
-                Innovación tecnológica con Fusga Systems & Technology
+                Innovación tecnológica con Fusga Systems & Technology
               </h1>
             </header>
             <div>
@@ -32,6 +33,8 @@ export const Home = () => {
           </aside>
         </section>
       </main>
+
+      <Suscribe /> 
     </>
   );
 };

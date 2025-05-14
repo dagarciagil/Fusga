@@ -58,7 +58,8 @@ export const Home = () => {
           </div>
         </section>
       </article>
-      <Suscribe />
+
+      <Suscribe /> 
     </>
   );
 };

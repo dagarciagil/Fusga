@@ -1,6 +1,6 @@
 export const Suscribe = () => {
   return (
-      <section className="flex justify-center items-center h-screen w-screen bg-gray-100">
+      <section className="flex justify-center items-center h-screen bg-gray-100 overflow-hidden">
         {/* Contenedor*/}
         <div className="bg-white p-10 rounded-lg shadow-xl w-full max-w-4xl">
           <article className="flex flex-col justify-between items-center space-y-8"> 

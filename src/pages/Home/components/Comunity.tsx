@@ -1,31 +1,33 @@
+import gradient_bg from "../../../assets/img/gradient-background.jpg";
+
 export const ComunityH = () => {
   return (
-    <article className="h-screen content-center bg-slate-300 overflow-hidden bg-no-repeat lg:h-screen">
-      <section className="relative py-16 px-4 md:px-8 max-w-6xl mx-auto">
-        <div className="flex justify-between flex-row relative bg-indigo-100 rounded-3xl p-8 md:p-12 overflow-hidden">
-          <div className="relative z-10 w-[30rem] bg-slate-300 rounded-3xl p-8 md:p-10 shadow-lg">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-              Para la comunidad de Fusagasugá
-            </h2>
-
-            <p className="text-sm md:text-base text-gray-700 mb-6">
-              Nos especializamos en el diseño y desarrollo de estrategias
-              virtuales innovadoras, enfocadas en ayudar a empresas, artistas y
-              proyectos a alcanzar sus metas con éxito. Creamos soluciones
-              digitales personalizadas que impulsan el crecimiento y la
-              visibilidad en el entorno virtual, garantizando resultados
-              efectivos y sostenibles.
-            </p>
-
-            <button className="bg-gray-800 hover:bg-gray-700 text-white text-sm py-2 px-4 rounded-md transition duration-300">
-              Leer más
-            </button>
-          </div>
-
-          <aside className="absolute top-7 left-[30rem] w-[35rem] h-[27rem] rounded-3xl bg-slate-400 overflow-hidden md:block">
-            <img src="" alt="Aquí va la imagen" />
-          </aside>
+    // Container principal
+    <article className="flex h-screen content-center items-center justify-center bg-sweetPinkC overflow-hidden bg-no-repeat lg:h-screen">
+      <section className="relative w-[80%] h-[90%] flex justify-center items-center content-center flex-row rounded-3xl p-8 md:p-12 overflow-hidden">
+        {/* Contenedor de la información */}
+        <div className="flex flex-col justify-center -left-[20rem] items-start relative z-10 w-[33rem] h-[30rem] bg-pinkC rounded-3xl p-8 shadow-lg md:p-10 ml-10">
+          {/* Título */}
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-greenC">
+            Para la comunidad de Fusagasugá
+          </h2>
+          {/* Descripción */}
+          <p className="text-sm text-greenC md:text-base mb-6 sm:text-base lg xl">
+            Nos especializamos en el diseño y desarrollo de estrategias
+            virtuales innovadoras, enfocadas en ayudar a empresas, artistas y
+            proyectos a alcanzar sus metas con éxito. Creamos soluciones
+            digitales personalizadas que impulsan el crecimiento y la
+            visibilidad en el entorno virtual, garantizando resultados
+            efectivos y sostenibles.
+          </p>
+          <button type="button" className="bg-greenC hover:bg-purpleC text-white text-sm py-3 px-6 rounded-3xl transition duration-300">
+            Leer más
+          </button>
         </div>
+        {/* Contenedor de la imagen al lado derecho */}
+        <aside className="absolute left-[32rem] w-[40rem] h-[34rem] shadow-lg rounded-3xl bg-transparent overflow-hidden 2xl:left-[40rem]">
+          <img src={gradient_bg} alt="Aquí va la imagen" className="w-full h-full object-fill" />
+        </aside>
       </section>
     </article>
   );

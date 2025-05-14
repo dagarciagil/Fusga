@@ -1,4 +1,6 @@
 import gradient_bg from "../../../assets/img/gradient-background.jpg";
+import { Link } from "react-router-dom";
+
 
 export const ComunityH = () => {
   return (
@@ -20,9 +22,11 @@ export const ComunityH = () => {
             visibilidad en el entorno virtual, garantizando resultados
             efectivos y sostenibles.
           </p>
-          <button type="button" className="bg-greenC hover:bg-purpleC text-white text-sm py-3 px-6 rounded-3xl transition duration-300">
-            Leer más
-          </button>
+          <Link to="/comunity">
+            <button  className="bg-greenC hover:bg-purpleC text-white text-sm py-3 px-6 rounded-3xl transition duration-300">
+              Leer más
+            </button>
+          </Link>
         </div>
         {/* Contenedor de la imagen al lado derecho */}
         <aside className="absolute left-[32rem] w-[40rem] h-[34rem] shadow-lg rounded-3xl bg-transparent overflow-hidden 2xl:left-[40rem]">

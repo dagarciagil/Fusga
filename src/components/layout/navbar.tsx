@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logo_Fusga from "../../assets/img/Fusga_logo.jpg";
 
 export const Navbar = () => {
   return (
     <nav className="flex items-center gap-24 bg-gray-800 text-white p-4 ">
       <div className="hover:text-blue-400 flex justify-center items-center rounded-full h-16 w-16 bg-amber-50 ml-6">
         <Link to="/">
-          <img className="rounded-full" src=" " alt="FUSGA" />
+          <img className="rounded-full" src={logo_Fusga} alt="FUSGA" />
         </Link>
       </div>
       <ul className="flex gap-6">

@@ -1,10 +1,10 @@
 import { Layout } from "./components/layout/Layout";
 
 //Rutas de los archivos
-import { Home } from "./pages/Home";
-import { Comunity } from "./pages/Comunity"
-import { Services } from "./pages/Services";
-import { About } from "./pages/About";
+import { Home } from "./pages/Home/Home";
+import { Comunity } from "./pages/Comunity/Comunity"
+import { Services } from "./pages/Services/Services";
+import { About } from "./pages/About/About";
 
 import { Routes, Route } from "react-router-dom";
 

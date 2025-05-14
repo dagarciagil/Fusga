@@ -31,9 +31,13 @@ export const Navbar = () => {
         </div>
 
         {/* Botón hamburguesa */}
-        <button className="md:hidden text-white ml-auto mr-4" onClick={toggleMenu} aria-label="Abrir menú">
+        <button
+          className="md:hidden text-white ml-auto mr-4"
+          onClick={toggleMenu}
+          aria-label="Abrir menú"
+        >
           {/* Si el menu esta abierto muestra la X con las rutas, sino muestra el menu hamburguesa */}
-          {isMenuOpen ? <X size={28} /> : <Menu size={28} />} 
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Menú en escritorio */}
@@ -66,16 +70,49 @@ export const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-gray-800 border-t border-gray-700 shadow-md z-1 overflow-y-auto">
           <ul className="flex flex-col py-2 px-4 text-base">
             <li>
-              <Link to="/comunity" className="block py-2 hover:text-blue-400" onClick={toggleMenu}>Comunidad</Link>
+              <Link
+                to="/"
+                className="block py-2 hover:text-blue-400"
+                onClick={toggleMenu}
+              >
+                Inicio
+              </Link>
             </li>
             <li>
-              <Link to="/services" className="block py-2 hover:text-blue-400" onClick={toggleMenu}>Servicios</Link>
+              <Link
+                to="/comunity"
+                className="block py-2 hover:text-blue-400"
+                onClick={toggleMenu}
+              >
+                Comunidad
+              </Link>
             </li>
             <li>
-              <Link to="/faq" className="block py-2 hover:text-blue-400" onClick={toggleMenu}>Preguntas frecuentes</Link>
+              <Link
+                to="/services"
+                className="block py-2 hover:text-blue-400"
+                onClick={toggleMenu}
+              >
+                Servicios
+              </Link>
             </li>
             <li>
-              <Link to="/about" className="block py-2 hover:text-blue-400" onClick={toggleMenu}>Acerca de</Link>
+              <Link
+                to="/faq"
+                className="block py-2 hover:text-blue-400"
+                onClick={toggleMenu}
+              >
+                Preguntas frecuentes
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="block py-2 hover:text-blue-400"
+                onClick={toggleMenu}
+              >
+                Acerca de
+              </Link>
             </li>
           </ul>
         </div>

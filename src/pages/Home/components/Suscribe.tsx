@@ -5,9 +5,9 @@ export const Suscribe = () => {
         <div className="bg-white p-10 rounded-lg shadow-xl w-full max-w-4xl">
           <article className="flex flex-col justify-between items-center space-y-8"> 
             <header className="mb-6 w-full">
-              <h1 className="text-4xl font-bold text-center text-gray-800">
+              <h2 className="text-4xl font-bold text-center text-gray-800">
                 Suscribirse
-              </h1>
+              </h2>
             </header>
             <div className="mb-8 w-full">
               <p className="text-center text-gray-600">

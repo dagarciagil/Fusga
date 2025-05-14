@@ -1,9 +1,8 @@
 export const Suscribe = () => {
   return (
-    <>
-      <main className="flex justify-center items-center h-screen w-screen bg-gray-100">
+      <section className="flex justify-center items-center h-screen w-screen bg-gray-100">
         {/* Contenedor*/}
-        <section className="bg-white p-10 rounded-lg shadow-xl max-w-4xl">
+        <div className="bg-white p-10 rounded-lg shadow-xl w-full max-w-4xl">
           <article className="flex flex-col justify-between items-center space-y-8"> 
             <header className="mb-6">
               <h1 className="text-4xl font-bold text-center text-gray-800">
@@ -31,8 +30,7 @@ export const Suscribe = () => {
               </button>
             </form>
           </article>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
   );
 };

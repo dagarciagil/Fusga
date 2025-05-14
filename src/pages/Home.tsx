@@ -1,4 +1,5 @@
 import iglesia from "../assets/img/iglesia.jpg";
+import { Suscribe } from "./Suscribe";
 
 export const Home = () => {
   return (
@@ -57,6 +58,7 @@ export const Home = () => {
           </div>
         </section>
       </article>
+      <Suscribe />
     </>
   );
 };

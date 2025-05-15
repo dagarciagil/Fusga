@@ -1,19 +1,20 @@
 import iglesia from "../../../assets/img/iglesia.jpg";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <main className="flex justify-center items-center md:py-12">
-      <section className="flex flex-col lg:flex-row justify-around items-center w-full md:gap-8 ">
+    <main className="flex items-center justify-center overflow-hidden bg-pinkC md:py-12">
+      <section className="flex flex-col items-center w-full justify-evenly lg:flex-row md:gap-8 ">
         {/* Contenido textual */}
-        <article className="flex flex-col justify-center items-center lg:items-start lg:w-5/12 text-center lg:text-left">
-          <header className="m-8">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+        <article className="flex flex-col items-center justify-center p-10 text-center lg:items-start lg:w-[40%] lg:text-left">
+          <header className="">
+            <h1 className="text-2xl font-bold text-purpleC sm:text-3xl md:text-4xl">
               Innovación tecnológica con Fusga Systems & Technology
             </h1>
           </header>
 
-          <div className="mb-6 mx-5 w-auto">
-            <p className="text-sm md:text-base text-gray-700">
+          <div className="w-auto my-5">
+            <p className="text-sm text-ptextC md:text-base">
               En <strong>FUSGA</strong> nos especializamos en el diseño y
               desarrollo de estrategias virtuales innovadoras, enfocadas en
               ayudar a empresas, artistas y proyectos a alcanzar sus metas con
@@ -24,15 +25,17 @@ export const Hero = () => {
           </div>
 
           <footer className="mt-4">
-            <button className="hover:bg-red-500 bg-violet-400 text-white rounded-full h-10 md:h-12 w-48 md:w-64 text-sm md:text-base transition-all duration-300">
-              Leer más..
-            </button>
+            <Link to="/about">
+              <button className="w-48 h-10 text-sm text-white transition-all duration-300 rounded-full hover:bg-greenC bg-purpleC md:h-12 md:w-64 md:text-base">
+                Leer más..
+              </button>
+            </Link>
           </footer>
         </article>
 
         {/* Imagen */}
         <aside className="m-5 lg:w-4/12 lg:mt-0">
-          <div className="sm:h-80 lg:h-[500px] xl:h-[40rem] overflow-hidden rounded-lg">
+          <div className="shadow-purpleC shadow-lg sm:h-80 lg:h-[500px] xl:h-[40rem] overflow-hidden rounded-lg">
             <img
               className="object-cover w-full h-full"
               src={iglesia}

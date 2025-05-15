@@ -5,34 +5,34 @@ import { Link } from "react-router-dom";
 export const ComunityH = () => {
   return (
     // Container principal
-    <article className="flex h-screen content-center items-center justify-center bg-sweetPinkC overflow-hidden bg-no-repeat lg:h-screen">
-      <section className="relative w-[80%] h-[90%] flex justify-center items-center content-center flex-row rounded-3xl p-8 md:p-12 overflow-hidden">
+    <article className="flex flex-col min-h-screen items-center justify-center bg-neutral-400 overflow-hidden bg-no-repeat">
+      <section className="w-[95%] sm:w-[90%] h-auto flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 rounded-3xl">
+
         {/* Contenedor de la información */}
-        <div className="flex flex-col justify-center -left-[20rem] items-start relative z-10 w-[33rem] h-[30rem] bg-pinkC rounded-3xl p-8 shadow-lg md:p-10 ml-10">
-          {/* Título */}
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-greenC">
+        <div className="bg-pinkC w-full sm:w-[90%] md:w-[80%] lg:w-[35rem] rounded-3xl shadow-lg p-6 sm:p-8 md:p-10">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-greenC">
             Para la comunidad de Fusagasugá
           </h2>
-          {/* Descripción */}
-          <p className="text-sm text-greenC md:text-base mb-6 sm:text-base lg xl">
-            Nos especializamos en el diseño y desarrollo de estrategias
-            virtuales innovadoras, enfocadas en ayudar a empresas, artistas y
-            proyectos a alcanzar sus metas con éxito. Creamos soluciones
-            digitales personalizadas que impulsan el crecimiento y la
-            visibilidad en el entorno virtual, garantizando resultados
-            efectivos y sostenibles.
+          <p className="text-sm sm:text-base md:text-lg lg:text-base mb-6 text-greenC">
+            Nos especializamos en el diseño y desarrollo de estrategias virtuales innovadoras, enfocadas en ayudar a empresas, artistas y proyectos a alcanzar sus metas con éxito. Creamos soluciones digitales personalizadas que impulsan el crecimiento y la visibilidad en el entorno virtual, garantizando resultados efectivos y sostenibles.
           </p>
           <Link to="/comunity">
-            <button  className="bg-greenC hover:bg-purpleC text-white text-sm py-3 px-6 rounded-3xl transition duration-300">
+            <button className="bg-greenC hover:bg-purpleC text-white text-sm sm:text-base py-3 px-6 rounded-3xl transition duration-300">
               Leer más
             </button>
           </Link>
         </div>
-        {/* Contenedor de la imagen al lado derecho */}
-        <aside className="absolute left-[32rem] w-[40rem] h-[34rem] shadow-lg rounded-3xl bg-transparent overflow-hidden 2xl:left-[40rem]">
-          <img src={gradient_bg} alt="Aquí va la imagen" className="w-full h-full object-fill" />
+
+        {/* Contenedor de la imagen */}
+        <aside className="w-full sm:w-[90%] md:w-[80%] lg:w-[38rem] h-[16rem] sm:h-[22rem] md:h-[26rem] lg:h-[36rem] rounded-3xl overflow-hidden shadow-xl">
+          <img
+            src={gradient_bg}
+            alt="Fondo con diseño abstracto"
+            className="w-full h-full object-cover"
+          />
         </aside>
+
       </section>
-    </article>
+    </article> 
   );
 };

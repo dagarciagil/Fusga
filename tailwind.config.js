@@ -14,10 +14,11 @@ module.exports = {
       },
       colors: {
         whiteC: '#F5FFF9',
-        sweetPinkC: '#F7F1FC',
+        sweetPinkC: '#ffeef2',
         pinkC: '#CDB2E2',
         greenC: '#226663',
-        purpleC: '#6E5084'
+        purpleC: '#6E5084',
+        ptextC: '#1e293b',
       },
       screens: {
         'sm': '480px',

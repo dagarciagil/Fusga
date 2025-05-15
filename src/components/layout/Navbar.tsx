@@ -17,13 +17,13 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white p-4 relative z-50">
+    <nav className="relative z-50 p-4 text-lg font-bold text-purpleC bg-pinkC">
       <div className="flex items-center justify-start gap-20">
         {/* Logo */}
-        <div className="hover:text-blue-400 flex justify-center items-center rounded-full h-12 w-12 sm:h-16 sm:w-16 bg-amber-50 ml-10">
+        <div className="flex items-center justify-center w-16 h-16 ml-10 bg-black rounded-full sm:h-16 sm:w-16">
           <Link to="/">
             <img
-              className="rounded-full w-full h-full"
+              className="w-full h-full rounded-full"
               src={logo_Fusga}
               alt="FUSGA"
             />
@@ -32,7 +32,7 @@ export const Navbar = () => {
 
         {/* Botón hamburguesa */}
         <button
-          className="md:hidden text-white ml-auto mr-4"
+          className="ml-auto mr-4 text-purpleC md:hidden"
           onClick={toggleMenu}
           aria-label="Abrir menú"
         >
@@ -41,24 +41,24 @@ export const Navbar = () => {
         </button>
 
         {/* Menú en escritorio */}
-        <ul className="hidden md:flex gap-10">
+        <ul className="hidden gap-10 md:flex">
           <li>
-            <Link to="/comunity" className="hover:text-blue-400">
+            <Link to="/comunity" className="hover:text-greenC">
               Comunidad
             </Link>
           </li>
           <li>
-            <Link to="/services" className="hover:text-blue-400">
+            <Link to="/services" className="hover:text-greenC">
               Servicios
             </Link>
           </li>
           <li>
-            <Link to="/faq" className="hover:text-blue-400">
+            <Link to="/faq" className="hover:text-greenC">
               Preguntas frecuentes
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-blue-400">
+            <Link to="/about" className="hover:text-greenC">
               Acerca de
             </Link>
           </li>
@@ -67,12 +67,12 @@ export const Navbar = () => {
 
       {/* Menú móvil (visible solo si está abierto) si isMenuOpen es true muestra el menú y cambia a la X */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-gray-800 border-t border-gray-700 shadow-md z-1 overflow-y-auto">
-          <ul className="flex flex-col py-2 px-4 text-base">
+        <div className="absolute left-0 right-0 overflow-y-auto border-gray-700 shadow-md bg-pinkC md:hidden top-full z-1">
+          <ul className="flex flex-col px-4 py-2 text-base">
             <li>
               <Link
                 to="/"
-                className="block py-2 hover:text-blue-400"
+                className="block py-2 hover:text-greenC"
                 onClick={toggleMenu}
               >
                 Inicio
@@ -81,7 +81,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/comunity"
-                className="block py-2 hover:text-blue-400"
+                className="block py-2 hover:text-greenC"
                 onClick={toggleMenu}
               >
                 Comunidad
@@ -90,7 +90,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/services"
-                className="block py-2 hover:text-blue-400"
+                className="block py-2 hover:text-greenC"
                 onClick={toggleMenu}
               >
                 Servicios
@@ -99,7 +99,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/faq"
-                className="block py-2 hover:text-blue-400"
+                className="block py-2 hover:text-greenC"
                 onClick={toggleMenu}
               >
                 Preguntas frecuentes
@@ -108,7 +108,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="block py-2 hover:text-blue-400"
+                className="block py-2 hover:text-greenC"
                 onClick={toggleMenu}
               >
                 Acerca de

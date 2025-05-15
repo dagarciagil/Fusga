@@ -4,10 +4,10 @@ export const Suscribe = () => {
         {/* Contenedor*/}
         <div className="bg-white p-10 rounded-lg shadow-xl w-full max-w-4xl">
           <article className="flex flex-col justify-between items-center space-y-8"> 
-            <header className="mb-6">
-              <h1 className="text-4xl font-bold text-center text-gray-800">
+            <header className="mb-6 w-full">
+              <h2 className="text-4xl font-bold text-center text-gray-800">
                 Suscribirse
-              </h1>
+              </h2>
             </header>
             <div className="mb-8">
               <p className="text-center text-gray-600">

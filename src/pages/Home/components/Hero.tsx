@@ -6,14 +6,14 @@ export const Hero = () => {
       <section className="flex flex-col lg:flex-row justify-around items-center w-full md:gap-8 ">
         {/* Contenido textual */}
         <article className="flex flex-col justify-center items-center lg:items-start lg:w-5/12 text-center lg:text-left">
-          <header className="mb-8">
-            <h1 className="text-2xl text-purpleC sm:text-3xl md:text-4xl font-bold leading-tight">
+          <header className="m-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
               Innovación tecnológica con Fusga Systems & Technology
             </h1>
           </header>
 
-          <div className="mb-6 w-full">
-            <p className="text-sm md:text-base text-purpleC">
+          <div className="mb-6 mx-5 w-auto">
+            <p className="text-sm md:text-base text-gray-700">
               En <strong>FUSGA</strong> nos especializamos en el diseño y
               desarrollo de estrategias virtuales innovadoras, enfocadas en
               ayudar a empresas, artistas y proyectos a alcanzar sus metas con
@@ -31,8 +31,8 @@ export const Hero = () => {
         </article>
 
         {/* Imagen */}
-        <aside className="lg:w-4/12 mt-6 lg:mt-0">
-          <div className="sm:h-80 md:h-96 lg:h-[500px] xl:h-[40rem] overflow-hidden rounded-lg">
+        <aside className="m-5 lg:w-4/12 lg:mt-0">
+          <div className="sm:h-80 lg:h-[500px] xl:h-[40rem] overflow-hidden rounded-lg">
             <img
               className="object-cover w-full h-full"
               src={iglesia}

@@ -39,6 +39,9 @@ module.exports = {
         },
         'p, span, blockquote': {
           fontFamily: theme('fontFamily.ptSerif'),
+        },
+        'body': {
+          backgroundColor: theme('colors.sweetPinkC'),
         }
       });
     })

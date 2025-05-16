@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const ComunityH = () => {
   return (
     // Container principal
-    <article className="flex flex-col items-center justify-center min-h-screen overflow-hidden bg-no-repeat bg-sweetPinkC">
+    <article className="flex flex-col items-center justify-center min-h-screen py-10 overflow-hidden bg-no-repeat bg-sweetPinkC">
       <section className="w-[95%] p-5 gap-y-5 sm:w-[90%] h-auto flex flex-col lg:flex-row items-center justify-center lg:rounded-3xl">
         {/* Contenedor de la información */}
         <div className="bg-pinkC w-full z-10 sm:w-[90%] md:w-[80%] lg:w-[35rem] rounded-3xl shadow-lg p-6 sm:p-8 md:p-10">

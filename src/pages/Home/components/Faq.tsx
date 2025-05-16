@@ -1,5 +1,5 @@
 import { useState } from "react";
-import faqImage from "../../../assets/img/faq-image.jpg"; // Cambia según tu ruta real
+import faqImage from "../../../assets/img/faq-image.jpg";
 
 export const Faq = () => {
   const faqs = [
@@ -36,8 +36,8 @@ export const Faq = () => {
   };
 
   return (
-    <section className="bg-white px-4 py-10 flex justify-center items-center min-h-screen">
-      <div className="bg-[#e0e7ff] p-10 rounded-lg shadow-xl w-full max-w-6xl flex flex-col md:flex-row gap-8">
+    <section className="bg-sweetPinkC px-4 py-10 flex justify-center items-center min-h-screen font-marcellus text-greenC">
+      <div className="bg-pinkC p-10 rounded-lg shadow-xl w-full max-w-6xl flex flex-col md:flex-row gap-8">
         {/* Imagen */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <img
@@ -49,23 +49,23 @@ export const Faq = () => {
 
         {/* Preguntas */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
+          <h2 className="text-3xl font-bold text-center mb-8">
             Preguntas Frecuentes
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-300 rounded-lg shadow-sm transition-all duration-300"
+                className="bg-whiteC border border-gray-300 rounded-lg shadow-sm transition-all duration-300"
               >
                 <button
-                  className="w-full text-left p-4 font-semibold text-gray-800 focus:outline-none"
+                  className="w-full text-left p-4 font-semibold focus:outline-none"
                   onClick={() => toggle(index)}
                 >
                   {faq.question}
                 </button>
                 <div
-                  className={`px-4 text-sm text-gray-600 overflow-hidden transition-all duration-300 ease-in-out ${
+                  className={`px-4 text-sm overflow-hidden transition-all duration-300 ease-in-out ${
                     openIndex === index ? "max-h-40 py-4" : "max-h-0 py-0"
                   }`}
                 >

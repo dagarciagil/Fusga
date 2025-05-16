@@ -1,11 +1,11 @@
 export const Suscribe = () => {
   return (
-    <section className="flex items-center justify-center w-full min-h-screen px-8 bg-white sm:px-12">
+    <section className="flex items-center justify-center w-full min-h-screen px-8 sm:px-12 bg-pinkC font-marcellus text-greenC">
       {/* Contenedor */}
       <div className="bg-[#e0e7ff] p-6 md:p-10 rounded-lg shadow-xl w-full max-w-4xl">
-        <article className="flex flex-col items-center justify-between space-y-8"> 
+        <article className="flex flex-col items-center justify-between space-y-8">
           <header className="w-full mt-6 mb-6">
-            <h2 className="text-4xl font-bold text-center text-gray-800">
+            <h2 className="text-4xl font-bold text-center">
               Suscríbete a la bolsa de empleo de Fusagasugá
             </h2>
           </header>

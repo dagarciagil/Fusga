@@ -17,8 +17,8 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-50 p-4 text-lg font-bold text-purpleC bg-pinkC">
-      <div className="flex items-center justify-start gap-20">
+    <header className="relative z-50 p-4 text-lg font-bold text-purpleC bg-pinkC">
+      <nav className="flex items-center justify-start gap-20">
         {/* Logo */}
         <div className="flex items-center justify-center w-16 h-16 ml-10 bg-black rounded-full sm:h-16 sm:w-16">
           <Link to="/">
@@ -63,11 +63,11 @@ export const Navbar = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </nav>
 
       {/* Menú móvil (visible solo si está abierto) si isMenuOpen es true muestra el menú y cambia a la X */}
       {isMenuOpen && (
-        <div className="absolute left-0 right-0 overflow-y-auto border-gray-700 shadow-md bg-pinkC md:hidden top-full z-1">
+        <nav className="absolute left-0 right-0 overflow-y-auto border-gray-700 shadow-md bg-pinkC md:hidden top-full z-1">
           <ul className="flex flex-col px-4 py-2 text-base">
             <li>
               <Link
@@ -115,8 +115,8 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </nav>
       )}
-    </nav>
+    </header>
   );
 };

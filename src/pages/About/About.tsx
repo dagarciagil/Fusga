@@ -1,8 +1,12 @@
-// src/pages/About.tsx
+import { Hero } from "./components/Hero";
+import { AboutUs } from "./components/AboutUs";
+
+
 export const About = () => {
   return (
     <>
-      <h1>Acerca de nosotros</h1>
+      <Hero />
+      <AboutUs />
     </>
   );
 };

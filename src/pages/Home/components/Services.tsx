@@ -35,8 +35,8 @@ export const ServicesH = () => {
         <>
             {/* Contenedor principal */}
             <section className="flex items-center justify-center py-16 min-h-svh">
-                <article className="p-4 w-[95%] h-[95%] bg-pinkC rounded-lg shadow-md lg:w-[80%]">
-                    <header className="flex justify-around p-4 mb-6 sm:gap-none md:justify-between lg:justify-between 2xl:justify-around 2xl:gap-[68rem]">
+                <article className="p-8 pb-10 w-[95%] h-[95%] bg-pinkC rounded-lg shadow-md lg:w-[80%]">
+                    <header className="flex justify-around p-4 mb-6 sm:gap-none md:justify-between lg:justify-between">
                         <div>
                             <h2 className="gap-1 text-3xl font-bold text-purpleC md:text-4xl 2xl:text-4xl">Servicios</h2>
                         </div>

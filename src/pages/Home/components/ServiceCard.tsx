@@ -13,7 +13,7 @@ export const ServiceCard = ({
 }: ServiceCardProps) => {
   return (
     <article
-      className={`p-8 2xl:h-[30rem] 2xl:w-[25rem] border border-purpleC rounded-2xl overflow-hidden 
+      className={`p-8 h-auto w-auto 2xl:h-[30rem] 2xl:w-[22rem] 3xl:w-[28rem] border border-purpleC rounded-2xl overflow-hidden 
                  shadow-sm hover:shadow-xl hover:bg-sweetPinkC transition-all duration-300 
                  ${bgColor} flex flex-col h-full`}
     >

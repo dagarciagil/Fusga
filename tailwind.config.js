@@ -21,12 +21,7 @@ module.exports = {
         ptextC: '#1e293b',
       },
       screens: {
-        'sm': '480px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-        '3xl': '1920px', // Ejemplo personalizado
+        '3xl': '1920px', // Tamaño de pantalla personalizado
       }
     },
   },

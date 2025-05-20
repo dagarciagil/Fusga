@@ -53,9 +53,9 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/faq" className="hover:text-greenC">
+            <a href="/#faq" className="hover:text-greenC">
               Preguntas frecuentes
-            </Link>
+            </a>
           </li>
           <li>
             <Link to="/about" className="hover:text-greenC">

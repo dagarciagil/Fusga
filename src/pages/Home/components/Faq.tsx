@@ -1,6 +1,7 @@
 import { useState } from "react";
 import faqImage from "../../../assets/img/faq-image.jpg";
 
+
 export const Faq = () => {
   const faqs = [
     {
@@ -36,7 +37,8 @@ export const Faq = () => {
   };
 
   return (
-    <section className="bg-sweetPinkC px-4 py-10 flex justify-center items-center min-h-screen font-marcellus text-greenC">
+    <section id="faq" className="bg-sweetPinkC px-4 py-10 flex justify-center items-center min-h-screen font-marcellus text-greenC">
+
       <div className="bg-pinkC p-10 rounded-lg shadow-xl w-full max-w-6xl flex flex-col md:flex-row gap-8">
         {/* Imagen */}
         <div className="w-full md:w-1/2 flex justify-center items-center">

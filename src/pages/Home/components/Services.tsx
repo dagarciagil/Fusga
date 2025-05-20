@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ServiceCard } from "./ServiceCard"; // Ajusta la ruta según donde crees el componente
+import { ServiceCard } from "../../../components/common/ServiceCard"; 
 import fondo1 from "../../../assets/img/fondo1.jpg";
 import fondo2 from "../../../assets/img/fondo2.jpg";
 import fondo3 from "../../../assets/img/fondo3.jpg";

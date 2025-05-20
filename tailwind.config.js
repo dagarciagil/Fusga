@@ -21,8 +21,13 @@ module.exports = {
         ptextC: '#1e293b',
       },
       screens: {
+        '2xl': '1540px',
         '3xl': '1920px', // Tamaño de pantalla personalizado
-      }
+      },
+      // Color gradiente de las tarjetas comunidad
+      backgroundImage: {
+        'colorCard': 'linear-gradient(to bottom right, #99f6e4, #93c5fd, #d8b4fe)',
+      },
     },
   },
   plugins: [
@@ -40,6 +45,5 @@ module.exports = {
         }
       });
     })
-    // 
   ],
 }

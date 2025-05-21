@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ServiceCard } from "../../../components/common/ServiceCard"; // Ajusta la ruta según donde crees el componente
+import { ServiceCard } from "../../../components/common/ServiceCard";
 import fondo1 from "../../../assets/img/fondo1.jpg";
 import fondo2 from "../../../assets/img/fondo2.jpg";
 import fondo3 from "../../../assets/img/fondo3.jpg";
@@ -29,38 +29,35 @@ export const serviceCards = [
 ];
 
 export const ServicesH = () => {
-    // Define los datos de tus tarjetas
-
     return (
-        <>
-            {/* Contenedor principal */}
-            <section className="flex items-center justify-center py-16 min-h-svh">
-                <article className="p-8 pb-10 w-[95%] h-[95%] bg-pinkC rounded-lg shadow-md lg:w-[80%]">
-                    <header className="flex justify-around p-4 mb-6 sm:gap-none md:justify-between lg:justify-between">
-                        <div>
-                            <h2 className="gap-1 text-3xl font-bold text-purpleC md:text-4xl 2xl:text-4xl">Servicios</h2>
-                        </div>
-                        <div>
-                            <Link to="/services">
-                                <button className="px-4 py-2 text-lg transition-colors rounded-lg text-ptextC bg-sweetPinkC hover:bg-purpleC hover:text-whiteC">
-                                    Ver más
-                                </button>
-                            </Link>
-                        </div>
-                    </header>
-                    <section className="grid grid-cols-1 gap-6 p-2 place-items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-                        {serviceCards.map(card => (
-                            <ServiceCard
-                                key={card.id}
-                                title={card.title}
-                                imageSrc={card.imageSrc}
-                                description={card.description}
-                                bgColor={card.bgColor}
-                            />
-                        ))}
-                    </section>
-                </article>
-            </section>
-        </>
+        <section className="flex items-center justify-center py-16 min-h-svh">
+            <article className="p-8 pb-10 w-[95%] h-[95%] bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 md:py-12 lg:w-[80%] rounded-3xl">
+                <header className="flex justify-around p-4 mb-6 sm:gap-none md:justify-between lg:justify-between">
+                    <div>
+                        <h2 className="gap-1 text-3xl font-bold text-white md:text-4xl 2xl:text-4xl">
+                            Servicios
+                        </h2>
+                    </div>
+                    <div>
+                        <Link to="/services">
+                            <button className="px-6 py-3 text-sm text-black bg-white hover:bg-gray-100 sm:text-base rounded-3xl">
+                                Ver más
+                            </button>
+                        </Link>
+                    </div>
+                </header>
+                <section className="grid grid-cols-1 gap-6 p-2 place-items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+                    {serviceCards.map(card => (
+                        <ServiceCard
+                            key={card.id}
+                            title={card.title}
+                            imageSrc={card.imageSrc}
+                            description={card.description}
+                            bgColor={card.bgColor}
+                        />
+                    ))}
+                </section>
+            </article>
+        </section>
     );
 };

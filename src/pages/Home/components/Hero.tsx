@@ -3,18 +3,23 @@ import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <main className="flex items-center justify-center overflow-hidden bg-pinkC md:py-12">
-      <section className="flex flex-col items-center w-full justify-evenly lg:flex-row md:gap-8 ">
+    <main className="flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 md:py-12">
+      <section className="flex flex-col items-center w-full justify-evenly lg:flex-row md:gap-8">
         {/* Contenido textual */}
-        <article className="flex flex-col items-center justify-center p-10 text-center lg:items-start lg:w-[40%] lg:text-left">
-          <header className="">
-            <h1 className="text-2xl font-bold text-purpleC sm:text-3xl md:text-4xl">
+        <article
+          className="flex flex-col items-center justify-center p-10 text-center lg:items-start lg:w-[40%] lg:text-left
+            bg-white rounded-lg
+          "
+        >
+          <header>
+            <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl text-black">
               Innovación tecnológica con Fusga Systems & Technology
+              <br />
             </h1>
           </header>
 
           <div className="w-auto my-5">
-            <p className="text-sm text-ptextC md:text-base">
+            <p className="text-sm md:text-base text-black">
               En <strong>FUSGA</strong> nos especializamos en el diseño y
               desarrollo de estrategias virtuales innovadoras, enfocadas en
               ayudar a empresas, artistas y proyectos a alcanzar sus metas con
@@ -26,7 +31,7 @@ export const Hero = () => {
 
           <footer className="mt-4">
             <Link to="/about">
-              <button className="w-48 h-10 text-sm text-white transition-all duration-300 rounded-full hover:bg-greenC bg-purpleC md:h-12 md:w-64 md:text-base">
+              <button className="bg-purpleDarkC text-white px-4 py-2 rounded-md font-semibold hover:bg-[#3A006A]">
                 Leer más..
               </button>
             </Link>

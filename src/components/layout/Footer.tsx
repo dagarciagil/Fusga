@@ -3,8 +3,8 @@ import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-pinkC text-ptextC pt-10 pb-6 px-6 md:px-16">
-      <section className="flex flex-col md:flex-row justify-between items-start  border-b border-gray-700 pb-8">
+    <footer className="bg-black text-white pt-10 pb-6 px-6 md:px-16">
+      <section className="flex flex-col md:flex-row justify-between items-start border-b border-gray-700 pb-8">
         {/* Logo y descripción */}
         <article className="flex flex-col items-start">
           <img
@@ -12,13 +12,13 @@ export const Footer = () => {
             alt="FUSGA Logo"
             className="h-16 w-16 rounded-full mb-3"
           />
-          <p className="text-sm text-purpleC">Fusga Systems & Technology</p>
+          <p className="text-sm text-white">Fusga Systems & Technology</p>
         </article>
 
         {/* Contacto */}
         <article>
           <h3 className="text-lg font-semibold mb-2">Contacto</h3>
-          <ul className="space-y-1 text-sm text-purpleC">
+          <ul className="space-y-1 text-sm text-white">
             <li className="flex items-center gap-2">
               <Mail size={16} /> contacto@fusga.edu.co
             </li>
@@ -27,10 +27,11 @@ export const Footer = () => {
             </li>
           </ul>
         </article>
+
         {/* Redes sociales */}
         <article>
           <h3 className="text-lg font-semibold mb-2">Síguenos</h3>
-          <div className="flex items-center gap-4 text-purpleC">
+          <div className="flex items-center gap-4 text-white">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -52,7 +53,7 @@ export const Footer = () => {
       </section>
 
       {/* Derechos de autor */}
-      <div className="text-center text-sm text-ptextC mt-6">
+      <div className="text-center text-sm text-white mt-6">
         &copy; {new Date().getFullYear()} FUSGA. Todos los derechos reservados.
       </div>
     </footer>

@@ -7,7 +7,6 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Cierra el menú móvil al cambiar de ruta
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location.pathname]);
@@ -16,8 +15,8 @@ export const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  return (
-    <header className="relative z-50 p-4 text-lg font-bold text-purpleC bg-pinkC">
+    return (
+    <header className="relative z-50 p-4 text-lg font-bold text-white bg-black">
       <nav className="flex items-center justify-start gap-20">
         {/* Logo */}
         <div className="flex items-center justify-center w-16 h-16 ml-10 bg-black rounded-full sm:h-16 sm:w-16">
@@ -32,11 +31,10 @@ export const Navbar = () => {
 
         {/* Botón hamburguesa */}
         <button
-          className="ml-auto mr-4 text-purpleC md:hidden"
+          className="ml-auto mr-4 text-white md:hidden"
           onClick={toggleMenu}
           aria-label="Abrir menú"
         >
-          {/* Si el menu esta abierto muestra la X con las rutas, sino muestra el menu hamburguesa */}
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
@@ -53,8 +51,8 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="/#faq" className="hover:text-greenC">
-              Preguntas frecuentes
+            <a href="/#faq-section" className="hover:text-greenC">
+               Preguntas frecuentes
             </a>
           </li>
           <li>
@@ -65,10 +63,10 @@ export const Navbar = () => {
         </ul>
       </nav>
 
-      {/* Menú móvil (visible solo si está abierto) si isMenuOpen es true muestra el menú y cambia a la X */}
+      {/* Menú móvil */}
       {isMenuOpen && (
-        <nav className="absolute left-0 right-0 overflow-y-auto border-gray-700 shadow-md bg-pinkC md:hidden top-full z-1">
-          <ul className="flex flex-col px-4 py-2 text-base">
+        <nav className="absolute left-0 right-0 overflow-y-auto border-gray-700 shadow-md bg-black md:hidden top-full z-10">
+          <ul className="flex flex-col px-4 py-2 text-base text-white">
             <li>
               <Link
                 to="/"
@@ -97,13 +95,14 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/faq"
+              <a
+                href="/#faq-section"
                 className="block py-2 hover:text-greenC"
                 onClick={toggleMenu}
               >
                 Preguntas frecuentes
-              </Link>
+              </a>
+
             </li>
             <li>
               <Link

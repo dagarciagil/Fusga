@@ -1,7 +1,6 @@
 import { useState } from "react";
 import faqImage from "../../../assets/img/faq-image.jpg";
 
-
 export const Faq = () => {
   const faqs = [
     {
@@ -37,9 +36,9 @@ export const Faq = () => {
   };
 
   return (
-    <section id="faq" className="bg-sweetPinkC px-4 py-10 flex justify-center items-center min-h-screen font-marcellus text-greenC">
-
-      <div className="bg-pinkC p-10 rounded-lg shadow-xl w-full max-w-6xl flex flex-col md:flex-row gap-8">
+    <section className="bg-white md:py-12 flex justify-center items-center min-h-screen font-marcellus" id="faq-section">
+      
+      <div className="bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 text-white p-10 rounded-3xl shadow-xl w-full max-w-6xl flex flex-col md:flex-row gap-8">
         {/* Imagen */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <img
@@ -58,7 +57,7 @@ export const Faq = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-whiteC border border-gray-300 rounded-lg shadow-sm transition-all duration-300"
+                className="bg-whiteC border border-gray-300 rounded-lg shadow-sm transition-all duration-300 text-purple-900"
               >
                 <button
                   className="w-full text-left p-4 font-semibold focus:outline-none"

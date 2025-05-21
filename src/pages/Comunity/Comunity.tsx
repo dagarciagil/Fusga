@@ -1,7 +1,7 @@
 export const Comunity = () => {
   return (
     <>
-      <section className="relative h-auto py-10 md:h-screen lg:h-screen 3xl:h-screen">
+      <section className="relative h-auto py-10 md:h-screen lg:h-screen 3xl:h-screen bg-white">
         {/* Elementos decorativos de fondo */}
         <section className="h-[95%] flex flex-col items-center justify-center gap-4 px-4 relative z-10">
           <div data-aos="fade-down" className="max-w-2xl mx-auto text-center">
@@ -16,7 +16,7 @@ export const Comunity = () => {
 
           {/* Panel de Bolsa de empleo */}
           <section className="grid grid-cols-1 gap-5 mb-16 md:place-items-center md:place-content-center lg:grid-cols-2 lg:w-[80%] lg:gap-0 3xl:w-[80%]">
-            <section className="flex flex-col justify-center w-full h-64 md:w-[80%] md:h-[20rem] md:p-10 lg:flex-row lg:w-[95%] 3xl:w-[90%] 3xl:h-[25rem] p-6 overflow-hidden rounded-lg bg-colorCard relative group transition-all duration-300 hover:shadow-lg hover:shadow-purple-300/50">
+             <section className="flex flex-col justify-center w-full h-64 md:w-[80%] md:h-[20rem] md:p-10 lg:flex-row lg:w-[95%] 3xl:w-[90%] 3xl:h-[25rem] p-6 overflow-hidden rounded-lg bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 md:py-12-200 text-white relative group transition-all duration-300 hover:shadow-lg hover:shadow-teal-300/50">
               {/* Elemento decorativo */}
               <div className="absolute w-32 h-32 transition-all duration-500 rounded-full -bottom-10 -right-10 bg-white/10 group-hover:-bottom-5 group-hover:-right-5"></div>
 
@@ -47,7 +47,7 @@ export const Comunity = () => {
             </section>
 
             {/* Panel de Turismo */}
-            <section className="flex flex-col justify-center w-full h-64 md:w-[80%] md:h-[20rem] md:p-10 lg:flex-row lg:w-[95%] 3xl:w-[90%] 3xl:h-[25rem] p-6 overflow-hidden rounded-lg bg-colorCard relative group transition-all duration-300 hover:shadow-lg hover:shadow-teal-300/50">
+            <section className="flex flex-col justify-center w-full h-64 md:w-[80%] md:h-[20rem] md:p-10 lg:flex-row lg:w-[95%] 3xl:w-[90%] 3xl:h-[25rem] p-6 overflow-hidden rounded-lg bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 md:py-12-200 text-white relative group transition-all duration-300 hover:shadow-lg hover:shadow-teal-300/50">
               {/* Elemento decorativo */}
               <div className="absolute w-32 h-32 transition-all duration-500 rounded-full -top-10 -left-10 bg-white/10 group-hover:-top-5 group-hover:-left-5"></div>
 

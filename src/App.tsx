@@ -5,6 +5,8 @@ import { Home } from "./pages/Home/Home";
 import { Comunity } from "./pages/Comunity/Comunity"
 import { Services } from "./pages/Services/Services";
 import { About } from "./pages/About/About";
+import { Candidates } from "./pages/JobBag/Candidates/Candidates";
+import { Employs } from "./pages/JobBag/Employs/Employs";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -21,6 +23,8 @@ export const App = () => {
           <Route path="comunity" element={<Comunity />} />
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
+          <Route path="candidates" element={<Candidates />} />
+          <Route path="employs" element={<Employs />} />
         </Route>
       </Routes>
     </>

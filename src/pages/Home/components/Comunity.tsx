@@ -1,4 +1,4 @@
-import gradient_bg from "../../../assets/img/gradient-background.jpg";
+import gradient_bg from "../../../assets/img/Home/gradient-background.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";

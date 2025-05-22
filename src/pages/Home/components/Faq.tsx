@@ -1,5 +1,5 @@
 import { useState } from "react";
-import faqImage from "../../../assets/img/faq-image.jpg";
+import faqImage from "../../../assets/img/Home/faq-image.jpg";
 
 export const Faq = () => {
   const faqs = [
@@ -36,31 +36,31 @@ export const Faq = () => {
   };
 
   return (
-    <section className="bg-white md:py-12 flex justify-center items-center min-h-screen font-marcellus" id="faq-section">
+    <section className="flex items-center justify-center min-h-screen bg-white md:py-12 font-marcellus" id="faq-section">
       
-      <div className="bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 text-white p-10 rounded-3xl shadow-xl w-full max-w-6xl flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col w-full max-w-6xl gap-8 p-10 text-white shadow-xl bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 rounded-3xl md:flex-row">
         {/* Imagen */}
-        <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div className="flex items-center justify-center w-full md:w-1/2">
           <img
             src={faqImage}
             alt="Preguntas Frecuentes"
-            className="rounded-lg w-full max-w-sm object-cover"
+            className="object-cover w-full max-w-sm rounded-lg"
           />
         </div>
 
         {/* Preguntas */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="mb-8 text-3xl font-bold text-center">
             Preguntas Frecuentes
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-whiteC border border-gray-300 rounded-lg shadow-sm transition-all duration-300 text-purple-900"
+                className="text-purple-900 transition-all duration-300 border border-gray-300 rounded-lg shadow-sm bg-whiteC"
               >
                 <button
-                  className="w-full text-left p-4 font-semibold focus:outline-none"
+                  className="w-full p-4 font-semibold text-left focus:outline-none"
                   onClick={() => toggle(index)}
                 >
                   {faq.question}

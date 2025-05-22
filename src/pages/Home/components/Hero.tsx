@@ -1,4 +1,4 @@
-import iglesia from "../../../assets/img/iglesia.jpg";
+import iglesia from "../../../assets/img/Home/iglesia.jpg";
 import { Link } from "react-router-dom";
 
 export const Hero = () => {
@@ -12,14 +12,22 @@ export const Hero = () => {
           "
         >
           <header>
-            <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl text-black">
-              Innovación tecnológica con Fusga Systems & Technology
+            <h1 className="text-2xl font-bold text-black sm:text-3xl md:text-4xl">
+              Innovación tecnológica con
+              <a
+                href="/"
+                // target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-teal-200 after:to-purple-300 after:transition-all after:duration-500 hover:after:w-full"
+              >
+                Fusga Systems & Technology
+              </a>
               <br />
             </h1>
           </header>
 
           <div className="w-auto my-5">
-            <p className="text-sm md:text-base text-black">
+            <p className="text-sm text-black md:text-base">
               En <strong>FUSGA</strong> nos especializamos en el diseño y
               desarrollo de estrategias virtuales innovadoras, enfocadas en
               ayudar a empresas, artistas y proyectos a alcanzar sus metas con

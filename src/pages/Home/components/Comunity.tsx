@@ -1,4 +1,4 @@
-import gradient_bg from "../../../assets/img/gradient-background.jpg";
+import gradient_bg from "../../../assets/img/Home/gradient-background.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
@@ -9,7 +9,7 @@ export const ComunityH = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="flex flex-col items-center justify-center min-h-screen py-10 overflow-hidden bg-no-repeat bg-sweetPinkC"
+      className="flex flex-col items-center justify-center min-h-screen py-10 overflow-hidden bg-no-repeat bg-gradient-to-tr from-blue-500 to-purple-300"
     >
       <section className="w-[95%] p-5 gap-y-5 sm:w-[90%] h-auto flex flex-col lg:flex-row items-center justify-center lg:rounded-3xl">
 
@@ -21,7 +21,7 @@ export const ComunityH = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 md:py-12 z-10 sm:w-[90%] md:w-[80%] lg:w-[35rem] rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 sm:p-8 md:p-10"
         >
-          <h2 className="mb-4 text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl text-white">
+          <h2 className="mb-4 text-xl font-bold text-white sm:text-2xl md:text-3xl lg:text-4xl">
             <Typewriter
               words={['Para la comunidad de Fusagasugá']}
               loop={Infinity}
@@ -36,7 +36,7 @@ export const ComunityH = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="mb-6 text-sm sm:text-base md:text-lg lg:text-base text-white"
+            className="mb-6 text-sm text-white sm:text-base md:text-lg lg:text-base"
           >
             Nos especializamos en el diseño y desarrollo de estrategias virtuales innovadoras, enfocadas en ayudar a empresas, artistas y proyectos a alcanzar sus metas con éxito. Creamos soluciones digitales personalizadas que impulsan el crecimiento y la visibilidad en el entorno virtual, garantizando resultados efectivos y sostenibles.
           </motion.p>

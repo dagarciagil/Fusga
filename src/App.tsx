@@ -4,6 +4,7 @@ import { Layout } from "./components/layout/Layout";
 import { Home } from "./pages/Home/Home";
 import { Comunity } from "./pages/Comunity/Comunity"
 import { Services } from "./pages/Services/Services";
+import { WebDev } from "./pages/Services/WebDev";
 import { About } from "./pages/About/About";
 import { Candidates } from "./pages/JobBag/Candidates/Candidates";
 import { Employs } from "./pages/JobBag/Employs/Employs";
@@ -22,6 +23,7 @@ export const App = () => {
           <Route index element={<Home />} />
           <Route path="comunity" element={<Comunity />} />
           <Route path="services" element={<Services />} />
+          <Route path="webdev" element={<WebDev />} />
           <Route path="about" element={<About />} />
           <Route path="candidates" element={<Candidates />} />
           <Route path="employs" element={<Employs />} />

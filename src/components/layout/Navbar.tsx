@@ -176,7 +176,7 @@ export const Navbar = () => {
                 <ul className="mt-1 ml-4 space-y-1">
                   <li>
                     <Link
-                      to="/services/general"
+                      to="/services"
                       className="block py-1 text-sm hover:text-greenC"
                       onClick={handleServiceClick}
                     >
@@ -185,7 +185,7 @@ export const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/services/web-development"
+                      to="/webdev"
                       className="block py-1 text-sm hover:text-greenC"
                       onClick={handleServiceClick}
                     >

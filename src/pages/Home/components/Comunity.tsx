@@ -9,7 +9,7 @@ export const ComunityH = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="flex flex-col items-center justify-center min-h-screen py-10 overflow-hidden bg-no-repeat bg-gradient-to-tr from-blue-500 to-purple-300"
+      className="flex flex-col items-center justify-center min-h-screen py-10 overflow-hidden bg-no-repeat"
     >
       <section className="w-[95%] p-5 gap-y-5 sm:w-[90%] h-auto flex flex-col lg:flex-row items-center justify-center lg:rounded-3xl">
 
